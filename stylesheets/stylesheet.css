@@ -1,41 +1,57 @@
-#title1 {
-  color: #f94701;
-  font-family: 'Pirata One', cursive;
-  font-size: 40px;
-  font-weight: 100;
-  line-height: 40px;
-  margin: 0 20px 30px;
-  text-align: center;
-  text-shadow: #b82700 1px 1px;
+.wrapper {
+  @media (min-width: 900px) {
+    max-width:1200px;
+  }
+  width: 100%;
+  margin: auto;
 }
 
-#title2 {
-  color: #000000;
-  font-family: 'Pirata One', cursive;
-  font-size: 40px;
-  font-weight: 100;
-  line-height: 40px;
-  margin: 20px 305px 30px;
-  text-align: center;
-  border-bottom: 2px solid rgb(45, 58, 78);
+a { 
+  text-decoration:none;
+  color: #4c4c4c;
+  font-size:20px;
+}
+p {
+  font-size:18px;
+  margin:0.5em 0;
+}
+h1 {
+  font-size:2.5em;
+  padding-top:15px;
+  margin-bottom:1em;
 }
 
-#p1 {
-  font-family: 'Pirata One', cursive;
-  text-align: center;
-  margin: 0 300px 50px ;
+section {
+  margin-top:2em;
+  border-top:1px solid #ccc;
+  @media (min-width: 900px) {
+    width:100%;
+  }
 }
-
-#p2 {
-  font-family: 'Pirata One', cursive;
-  text-align: center;
-  margin: 0 300px 30px;
+nav {
+  background-color:#fff;
+  padding:1em 0;
+  a {
+    margin-right:1em;
+    &:last-child {
+      margin-right:0;
+    }
+    &:hover {
+      text-decoration:underline;
+    }
+  }
 }
-
-#p3 {
-  font-family: 'Pirata One', cursive;
-  text-align: center;
-  font-size: 10px;
-  margin: 10px 300px 20px;
-  border-top: 1px solid rgb(45, 58, 78);
+.stick {
+  position:fixed;
+  top:0;
+  left:0;
+  opacity:0.8;
+  width:100%;
+  .menu {
+    max-width:1200px;
+    margin:0 auto;
+    .active {
+      text-decoration:underline;
+    }
+  }
 }
