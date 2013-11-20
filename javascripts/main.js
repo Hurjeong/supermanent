@@ -35,9 +35,12 @@ setInterval(function() {
   });     
   }
 }, 250);
+</script>
 
 /* Performs a smooth page scroll to an anchor on the same page.
 http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
 
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
