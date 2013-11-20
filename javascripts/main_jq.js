@@ -1,0 +1,64 @@
+var script = document.createElement('script');
+script.src = 'http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+var el = $("#one");
+var menu = $("#nav");
+var menuItems = $(".menu > a");
+var pos = el.offset().top;
+didScroll = false;
+
+$(window).on("scroll", function() {
+  didScroll = true;
+});
+
+
+// http://ejohn.org/blog/learning-from-twitter/#postcomment
+setInterval(function() {
+  if(didScroll) {
+    didScroll = false;
+      var scrollPos = $(window).scrollTop();
+  
+  if (scrollPos > (pos - 50)) { //Adjust menu opening
+    menu.addClass('stick');
+  } 
+  else { 
+    menu.removeClass('stick');
+  }; 
+  $('.inview').each(function(){
+  var itemOffset = Math.abs($(this).offset().top);
+    if (itemOffset > 0 && itemOffset < scrollPos) {
+      var menuElm = $(this).attr('id');
+      console.log(menuElm);
+      menuItems.removeClass("active");
+      $("." + menuElm).addClass("active");
+    }
+  });     
+  }
+}, 250);
+
+/* Performs a smooth page scroll to an anchor on the same page.
+http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 500);
+            return false;
+        }
+    }
+});
+
+
+
+
+
+
+
