@@ -21,6 +21,9 @@ setInterval(function() {
   else { 
     menu.removeClass('stick');
   }; 
+
+  <script src="jquery.js">
+  
   $('.inview').each(function(){
   var itemOffset = Math.abs($(this).offset().top);
     if (itemOffset > 0 && itemOffset < scrollPos) {
@@ -52,7 +55,7 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 
-
+</script>
 
 
 
