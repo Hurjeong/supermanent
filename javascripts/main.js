@@ -1,4 +1,4 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+
 
 var el = $("#one");
 var menu = $("#nav");
@@ -53,7 +53,7 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 
-</script>
+
 
 
 
