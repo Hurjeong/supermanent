@@ -21,11 +21,8 @@ setInterval(function() {
   else { 
     menu.removeClass('stick');
   }; 
-
-<script type="text/javascript" 
-    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-</script>
-<script type="text/javascript">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
 
   $('.inview').each(function(){
   var itemOffset = Math.abs($(this).offset().top);
