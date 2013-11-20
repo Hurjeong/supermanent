@@ -1,4 +1,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+
+var el = $("#one");
 var menu = $("#nav");
 var menuItems = $(".menu > a");
 var pos = el.offset().top;
