@@ -22,8 +22,11 @@ setInterval(function() {
     menu.removeClass('stick');
   }; 
 
-  <script src="jquery.js">
-  
+<script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+
   $('.inview').each(function(){
   var itemOffset = Math.abs($(this).offset().top);
     if (itemOffset > 0 && itemOffset < scrollPos) {
