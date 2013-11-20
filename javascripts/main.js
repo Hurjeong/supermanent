@@ -8,6 +8,7 @@ $(window).on("scroll", function() {
   didScroll = true;
 });
 
+
 // http://ejohn.org/blog/learning-from-twitter/#postcomment
 setInterval(function() {
   if(didScroll) {
