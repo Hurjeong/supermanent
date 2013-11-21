@@ -30,6 +30,7 @@ section {
   }
 }
 nav {
+  position: fixed;
   background-color:#fff;
   padding:1em 0;
   a {
