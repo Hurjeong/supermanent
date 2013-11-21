@@ -6,22 +6,24 @@
 <link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
 <link rel="stylesheet" type="text/css" href="./javascripts/jquery.main.js.css"></script>
 <script src="./javascripts/jquery.main.js">
+
+<script type='text/javascript'>
   
 var el = $("#one");
 var menu = $("#nav");
 var menuItems = $(".menu > a");
 var pos = el.offset().top;
 didScroll = false;
-
+</script>
 
 <script type='text/javascript'>
+
+
 
 $(window).on("scroll", function() {
   didScroll = true;
 });
-</script>
 
-<script type='text/javascript'>
 setInterval(function() {
   if(didScroll) {
     didScroll = false;
@@ -33,9 +35,7 @@ setInterval(function() {
   else { 
     menu.removeClass('stick');
   }; 
-</script>
 
-<script type='text/javascript'>
 
   $('.inview').each(function(){
   var itemOffset = Math.abs($(this).offset().top);
@@ -48,9 +48,7 @@ setInterval(function() {
   });     
   }
 }, 250);
-</script>
 
-<script type='text/javascript'>
 
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -66,7 +64,7 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
-</script>
+
 
 </script>
 
