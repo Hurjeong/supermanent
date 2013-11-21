@@ -13,16 +13,13 @@ var menuItems = $(".menu > a");
 var pos = el.offset().top;
 didScroll = false;
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-<script>
+
 $(window).on("scroll", function() {
   didScroll = true;
 });
-</script>
 
 
-// http://ejohn.org/blog/learning-from-twitter/#postcomment
 setInterval(function() {
   if(didScroll) {
     didScroll = false;
@@ -35,7 +32,7 @@ setInterval(function() {
     menu.removeClass('stick');
   }; 
 
-<script>
+
 
   $('.inview').each(function(){
   var itemOffset = Math.abs($(this).offset().top);
@@ -48,12 +45,7 @@ setInterval(function() {
   });     
   }
 }, 250);
-</script>
 
-/* Performs a smooth page scroll to an anchor on the same page.
-http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
 
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -71,13 +63,15 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 
+
+
+
+
+
+
 </script>
 
 
-
-
-
-</script>
 </head>
 
 
