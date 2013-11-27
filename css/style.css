@@ -17,7 +17,7 @@ body {
     position:absolute;
     width:100px;
     height:100px;
-    -webkit-mask-image:url(./img/pipi.png);
+    -webkit-mask-image:url(../img/pipi.png);
     -webkit-mask-size:100px 100px;
     -webkit-transform: translate(0px,150px);
     -webkit-animation: anim 3s infinite;
