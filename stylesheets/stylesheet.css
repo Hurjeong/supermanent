@@ -8,3 +8,21 @@ body {
   margin:2% auto;
   perspective: 1000px;
 }
+
+.main {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin:0 auto;
+  transform-style:  preserve-3d;
+  animation: roundandround 7.5s 1.3s infinite linear;
+}
+
+.rota {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin:0 auto;
+  transform-style:  preserve-3d;
+  animation: roundandround 7.5s 1.3s infinite linear;
+}
