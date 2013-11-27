@@ -26,3 +26,14 @@ body {
   transform-style:  preserve-3d;
   animation: roundandround 7.5s 1.3s infinite linear;
 }
+
+.rota .rota_n {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  animation: show 0.75s forwards ease-in-out;
+}
