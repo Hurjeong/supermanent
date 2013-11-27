@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color:#E8CB00;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        -webkit-transform: translate(250px,150px);
+    }
+    50% {
+        -webkit-transform: translate(200px,150px);
+    }    
+    
+}
+
+#pi {
+    position:absolute;
+    width:100px;
+    height:100px;
+    -webkit-mask-image:url(../img/pipi.png);
+    -webkit-mask-size:100px 100px;
+    -webkit-transform: translate(0px,150px);
+    -webkit-animation: anim 3s infinite;
+}
+
+
+#stage {
+    position:relative;
+    margin:auto;
+    background-color:orange;
+    width: 400px;
+    height: 300px;    
+    -webkit-perspective:300px center center;
+}
+
+#scene {
+    position:absolute;
+    width:400px;
+    height:300px;
+    /*-webkit-transform: rotateX(0deg)rotateY(10deg);*/
+    -webkit-transform-style:preserve-3d;
+}
+
+#floor {
+    position: absolute;
+    width : 400px;
+    height : 200px;
+    background-color:white;
+    -webkit-transform: translate(0px, 150px) rotateX(90deg);
+}
+
+#back {
+    position: absolute;
+    width : 400px;
+    height : 200px;
+    background-color:white;
+    -webkit-transform: translate3d(0px, 50px, -100px);
+}
+
+#wood {
+    position:absolute;
+    width:80px;
+     -webkit-transform: translate(20px,130px);
+}
+
+#wood2 {
+    position:absolute;
+    width:80px;
+     -webkit-transform: translate(200px,130px);
+}
