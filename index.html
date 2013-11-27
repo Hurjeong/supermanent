@@ -1,139 +1,31 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-<title>Supermanent</title>
-<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="./javascripts/jquery.main.js.css"></script>
-<script src="./javascripts/jquery.main.js">
 
-<script type='text/javascript'>
+  <head>
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/stylesheet.css">
+    <script type="text/javascript" src="./javascripts/main.js"></script>
+    <title>Supermanent</title>
+  </head>
+  <div id="main">
+    <img id="main1" src="./images/main_1.png">
+    <img id="main2" src="./images/main_2.png">
+    <img id="main3" src="./images/main_3.png">
+    <img id="main3" src="./images/main_4.png">
+  </div>
+
+  <body>
+    <audio src="./Yaporigami - Loop 1.12.mp3" autoplay loop preload></audio>
+    <div id="opening"></div>
   
-var el = $("#one");
-var menu = $("#nav");
-var menuItems = $(".menu > a");
-var pos = el.offset().top;
-didScroll = false;
-</script>
+    <div id="rota">    
+      <img id="rota1" src="./images/rota_1.png">
+      <img id="rota2" src="./images/rota_2.png">
+      <img id="rota3" src="./images/rota_3.png">
+      <img id="rota4" src="./images/rota_4.png">
+      <img id="rota5" src="./images/rota_5.png">
+      <img id="rota6" src="./images/rota_6.png">
+      <img id="rota7" src="./images/rota_7.png">
 
-<script type='text/javascript'>
-
-
-
-$(window).on("scroll", function() {
-  didScroll = true;
-});
-
-setInterval(function() {
-  if(didScroll) {
-    didScroll = false;
-      var scrollPos = $(window).scrollTop();
-  
-  if (scrollPos > (pos - 50)) { //Adjust menu opening
-    menu.addClass('stick');
-  } 
-  else { 
-    menu.removeClass('stick');
-  }; 
-
-
-  $('.inview').each(function(){
-  var itemOffset = Math.abs($(this).offset().top);
-    if (itemOffset > 0 && itemOffset < scrollPos) {
-      var menuElm = $(this).attr('id');
-      console.log(menuElm);
-      menuItems.removeClass("active");
-      $("." + menuElm).addClass("active");
-    }
-  });     
-  }
-}, 250);
-
-
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 500);
-            return false;
-        }
-    }
-});
-
-
-</script>
-
-
-</head>
-
-
-<div class="wrapper">
-  <nav id="nav">
-    <div class="menu">
-      <a class="one" href="#one">About me</a>
-      <a class="two" href="#two">Photography</a>
-      <a class="three" href="#three">Graphic</a>
-      <a class="four" href="#four">Drawing</a>
-      <a class="five" href="#five">Video</a>
-      <a class="six" href="#six">Contact</a>
     </div>
-  </nav>
-  <section>
-    <h1 id="one" class="inview">Supermanent</h1>
-    <p>-Seoul. Korea</p>
-    <p>-KMUVCD</p>
-  </section>
-  <section>
-    <h1 id="two" class="inview">Photography</h1>
-        <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-frc1/1239413_1408154569408647_310898027_n.jpg" alt="" />
-        <p>To become one</p>
-        <p>series</p>
-        <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/537044_1420692234821547_1428351829_n.jpg" alt="" />
-        <p>SB_647</p>
-        <p>series</p>
-        <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/1381451_1423422404548530_185212617_n.jpg" alt="" />
-        <p>Bueaty</p>
-        <p>series</p>
-    <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc3/996626_1423423177881786_596714530_n.jpg" alt="" />
-    <p>Bueaty</p>
-    <p>series</p>
-    <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/1375255_1423425701214867_1352534335_n.jpg" alt="" />
-    <p>56SX845B</p>
-    <p>series</p>
-    <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/1459734_1437843879773049_86159740_n.jpg" alt="" />
-    <p>T.O</p>
-    <p>series</p>
-  </section>
-  <section>
-    <h1 id="three" class="inview">Graphic</h1>
-            <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/1382975_1426120807612023_640418769_n.jpg" alt="" />
-    <p>untitled</p>
-  </section>
-  <section>
-    <h1 id="four" class="inview">Drawing</h1>
-            <img src="http://payload113.cargocollective.com/1/9/312993/4560634/profile.JPG" alt="" />        
-  </section>
-  <section>
-    <h1 id="five" class="inview">Video</h1>
-    <p>My video work!.</p>
-  </section>
-    <section>
-    <h1 id="six" class="inview">Contact</h1>
-    <p>-</p>
-    <p>Facebook</p>
-    <p>https://www.facebook.com/manent.super</p>
-    <p>-</p>
-    <p>E-mail</p>
-    <p>supermanent.j@gmail.com</p>
-    <p>-</p>
-    <p>-</p>
-    <p>More work in my Facebook.</p>
-  </section>
-</div>
-
+  </body>
 </html>
